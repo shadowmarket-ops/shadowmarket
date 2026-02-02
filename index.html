@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowMarket Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="market-interface">
+        <header>
+            <h1>Shadow<span class="red">Market</span></h1>
+            <div class="wallet-card">
+                <input type="number" id="user-budget" placeholder="Budget ($)">
+                <button onclick="setBudget()">OK</button>
+                <p>Solde: <span id="current-balance">0</span>$</p>
+            </div>
+        </header>
+
+        <section id="product-list">
+            </section>
+
+        <footer>
+            <div class="cart-bar">
+                <span>Total: <b id="total-price">0</b>$</span>
+                <button class="buy-btn" onclick="checkout()">PAYER</button>
+            </div>
+        </footer>
+    </main>
+
+    <div id="fbi-screen" style="display: none;">
+        <div class="fbi-badge">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg" alt="FBI Seal" width="150">
+        </div>
+        <h1>SEIZED BY FBI</h1>
+        <p>This hidden service has been seized as part of a coordinated law enforcement action.</p>
+        <div id="user-data"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
