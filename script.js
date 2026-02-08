@@ -1,8 +1,17 @@
 // --- CONFIGURATION ---
 const products = [
-    { name: "Données Bancaires", price: 450 },
-    { name: "Logiciel Espion", price: 1200 },
-    { name: "Identité Falsifiée", price: 2500 }
+    { name: "3x Données Bancaires", price: 450 },
+    { name: "1x Logiciel Espion", price: 1200 },
+    { name: "10x Identité Falsifiée", price: 2500 },
+    { name: "1x Castor", price: 100000 },
+    { name: "1x Caisse d'armes (5,56 et 9mm)", price: 15000 },
+    { name: "1x Logiciel Espion", price: 1200 },
+    { name: "1x Avion de combat F-35", price: 50000000 },
+    { name: "1x Voiture de luxe", price: 120000 },
+    { name: "1x Tueur à gage", price: 95000 },
+    { name: "2x Lunettes de vision nocturne", price: 80000 },
+    { name: "1x Villa au Bahamas", price: 675000 },
+    { name: "1x Hélicoptère", price: 1200000 }
 ];
 
 let balance = 0;
@@ -107,4 +116,5 @@ products.forEach(p => {
 });
 
 // LANCER LA VÉRIFICATION AU CHARGEMENT
+
 window.onload = checkStatus;
